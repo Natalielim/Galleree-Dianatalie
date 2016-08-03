@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311909E61D529A8000D291E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311909E51D529A8000D291E0 /* ProfileViewController.swift */; };
 		681DF3CF1D0733EB00A4AB75 /* SyncableObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681DF3CD1D0733EB00A4AB75 /* SyncableObject+CoreDataProperties.swift */; };
 		681DF3D01D0733EB00A4AB75 /* SyncableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681DF3CE1D0733EB00A4AB75 /* SyncableObject.swift */; };
 		682FA4D71CF5427500B81932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FA4D61CF5427500B81932 /* AppDelegate.swift */; };
@@ -52,10 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		311909E51D529A8000D291E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		68199A871D007F96001C6FAE /* Timeline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Timeline.entitlements; sourceTree = "<group>"; };
 		681DF3CD1D0733EB00A4AB75 /* SyncableObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SyncableObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		681DF3CE1D0733EB00A4AB75 /* SyncableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncableObject.swift; sourceTree = "<group>"; };
-		682FA4D31CF5427500B81932 /* GallereeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallereeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		682FA4D31CF5427500B81932 /* Galleree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Galleree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		682FA4D61CF5427500B81932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		682FA4DB1CF5427500B81932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		682FA4DD1CF5427500B81932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,7 +129,7 @@
 		682FA4D41CF5427500B81932 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				682FA4D31CF5427500B81932 /* GallereeHome.app */,
+				682FA4D31CF5427500B81932 /* Galleree.app */,
 				682FA4E71CF5427500B81932 /* GallereeHome.xctest */,
 				682FA4F21CF5427500B81932 /* GallereeHome.xctest */,
 			);
@@ -189,6 +191,7 @@
 				68AA93241CF68A1A0006A751 /* AddPostTableViewController.swift */,
 				68658B671CF8F3280016C5CD /* SearchResultsTableViewController.swift */,
 				68AA932A1CF68ECD0006A751 /* PhotoSelectViewController.swift */,
+				311909E51D529A8000D291E0 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -281,7 +284,7 @@
 			);
 			name = GallereeHome;
 			productName = Timeline;
-			productReference = 682FA4D31CF5427500B81932 /* GallereeHome.app */;
+			productReference = 682FA4D31CF5427500B81932 /* Galleree.app */;
 			productType = "com.apple.product-type.application";
 		};
 		682FA4E61CF5427500B81932 /* GallereeHomeTests */ = {
@@ -332,7 +335,7 @@
 				TargetAttributes = {
 					682FA4D21CF5427500B81932 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 74D5U6H7T7;
+						DevelopmentTeam = QF7DSRY6RV;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -349,7 +352,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 682FA4CE1CF5427500B81932 /* Build configuration list for PBXProject "GallereeHome" */;
+			buildConfigurationList = 682FA4CE1CF5427500B81932 /* Build configuration list for PBXProject "Galleree" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -403,6 +406,7 @@
 			files = (
 				68658B681CF8F3280016C5CD /* SearchResultsTableViewController.swift in Sources */,
 				681DF3D01D0733EB00A4AB75 /* SyncableObject.swift in Sources */,
+				311909E61D529A8000D291E0 /* ProfileViewController.swift in Sources */,
 				68AA932B1CF68ECD0006A751 /* PhotoSelectViewController.swift in Sources */,
 				68AA93231CF68A020006A751 /* PostDetailTableViewController.swift in Sources */,
 				68658B661CF8B8730016C5CD /* PostTableViewCell.swift in Sources */,
@@ -568,8 +572,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Timeline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.didilim.GallereeHome;
-				PRODUCT_NAME = GallereeHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinklytwin.Galleree;
+				PRODUCT_NAME = Galleree;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -583,8 +587,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Timeline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.didilim.GallereeHome;
-				PRODUCT_NAME = GallereeHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinklytwin.Galleree;
+				PRODUCT_NAME = Galleree;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -638,7 +642,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		682FA4CE1CF5427500B81932 /* Build configuration list for PBXProject "GallereeHome" */ = {
+		682FA4CE1CF5427500B81932 /* Build configuration list for PBXProject "Galleree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				682FA4F91CF5427500B81932 /* Debug */,
