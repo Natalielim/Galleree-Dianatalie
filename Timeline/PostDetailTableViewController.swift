@@ -1,9 +1,9 @@
 //
 //  PostDetailTableViewController.swift
-//  Timeline
+//  Galleree
 //
-//  Created by Caleb Hicks on 5/25/16.
-//  Copyright © 2016 DevMountain. All rights reserved.
+//  Created by Natalie Lim on 7/28/16.
+//  Copyright © 2016 Dianatalie. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
     var post: Post?
     
     var fetchedResultsController: NSFetchedResultsController?
-
+    
     @IBOutlet weak var followPostButton: UIBarButtonItem!
     @IBOutlet weak var imageView: UIImageView!
     
@@ -38,7 +38,7 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
         
         PostController.sharedController.checkSubscriptionToPostComments(post) { (subscribed) in
             
-            dispatch_async(dispatch_get_main_queue(), { 
+            dispatch_async(dispatch_get_main_queue(), {
                 self.followPostButton.title = subscribed ? "Unfollow Post" : "Follow Post"
             })
         }
@@ -193,5 +193,5 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
         
         presentViewController(activityViewController, animated: true, completion: nil)
     }
-
+    
 }
