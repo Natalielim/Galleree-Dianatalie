@@ -1,6 +1,6 @@
 //
 //  ProfileViewController.swift
-//  GallereeHome
+//  Galleree
 //
 //  Created by Natalie Lim on 8/3/16.
 //  Copyright © 2016 Dianatalie. All rights reserved.
@@ -36,6 +36,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate,UINavigationCon
     }
     
     // Mark: - Update Image View
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
             imageView.contentMode = .ScaleAspectFit

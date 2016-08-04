@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--GallereeHome-->
+        <!--Home-->
         <scene sceneID="bFx-IN-mHc">
             <objects>
                 <tableViewController id="gK2-fp-nri" customClass="PostListTableViewController" customModule="Galleree" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="khd-gn-aXP"/>
-                    <navigationItem key="navigationItem" title="GallereeHome" id="deT-A6-ZRe">
+                    <navigationItem key="navigationItem" title="Home" id="deT-A6-ZRe">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yNp-Op-9FN">
                             <connections>
                                 <segue destination="Pmc-3g-uM2" kind="presentation" id="5Us-vT-co3"/>
@@ -376,10 +376,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="clearsearch" id="G62-gq-3Fi">
-                        <inset key="imageInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                    <tabBarItem key="tabBarItem" title="" image="clearsearch" id="G62-gq-3Fi">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
@@ -423,13 +423,6 @@
                                     <constraint firstAttribute="width" constant="150" id="dB6-5T-a3N"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nk-4J-By7">
-                                <rect key="frame" x="0.0" y="272" width="600" height="279"/>
-                                <color key="backgroundColor" red="0.87628205128205128" green="0.87628205128205128" blue="0.87628205128205128" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C51-0q-ZKN">
                                 <rect key="frame" x="249.5" y="130" width="101" height="30"/>
                                 <state key="normal" title="Add Profile Pic"/>
@@ -437,6 +430,13 @@
                                     <action selector="butLibraryAction:" destination="EkN-rp-Svt" eventType="touchUpInside" id="rzd-eG-BP2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nk-4J-By7">
+                                <rect key="frame" x="0.0" y="272" width="600" height="279"/>
+                                <color key="backgroundColor" red="0.87628205128205128" green="0.87628205128205128" blue="0.87628205128205128" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -479,8 +479,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="clearprofile" id="J1T-wT-2hG">
-                        <inset key="imageInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                    <tabBarItem key="tabBarItem" title="" image="clearprofile" id="J1T-wT-2hG">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -522,8 +522,8 @@
         <scene sceneID="9Nc-OV-JXo">
             <objects>
                 <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="Wjq-MM-JzB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="clearhomegalleree" id="Sib-Ht-cNJ">
-                        <inset key="imageInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                    <tabBarItem key="tabBarItem" title="" image="clearhomegalleree" id="Sib-Ht-cNJ">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -612,9 +612,9 @@
     <resources>
         <image name="Screen Shot 2016-08-03 at 11.19.50 AM" width="798" height="1110"/>
         <image name="White Rectangle" width="404" height="155"/>
-        <image name="clearhomegalleree" width="42" height="37"/>
-        <image name="clearprofile" width="34" height="37"/>
-        <image name="clearsearch" width="34" height="37"/>
+        <image name="clearhomegalleree" width="36" height="31"/>
+        <image name="clearprofile" width="35" height="37"/>
+        <image name="clearsearch" width="35" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="usP-Ct-O2G"/>
