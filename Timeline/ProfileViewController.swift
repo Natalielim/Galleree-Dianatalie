@@ -8,25 +8,28 @@
 
 import UIKit
 
-class Profile: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.layer.borderWidth = 10
+      /*  imageView.layer.borderWidth = 10
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = UIColor.whiteColor().CGColor
         imageView.layer.cornerRadius = imageView.frame.height/2
-        imageView.clipsToBounds = true
+        imageView.clipsToBounds = true*/
     }
     
     let imagePicker = UIImagePickerController()
     
     // MARK: - Capture Image
     
+//    @IBAction func butLibraryAction(sender: AnyObject) {
     @IBAction func butLibraryAction(sender: AnyObject) {
+        
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .PhotoLibrary
         
@@ -35,8 +38,14 @@ class Profile: UIViewController, UIImagePickerControllerDelegate,UINavigationCon
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
-    // Mark: - Update Image View
+ /*   @IBAction func butPhotoAction(sender: AnyObject) {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .Camera
+        
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }*/
     
+    // Mark: - Update Image View
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
             imageView.contentMode = .ScaleAspectFit

@@ -196,4 +196,7 @@ class PostListTableViewController: UITableViewController, NSFetchedResultsContro
             }
         }
     }
+    @IBOutlet weak var titleText: UILabel!
+
 }
+

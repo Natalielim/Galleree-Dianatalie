@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3108CAC91D550BAB00EDB2CC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3108CAC81D550BAB00EDB2CC /* CloudKit.framework */; };
 		311909E61D529A8000D291E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311909E51D529A8000D291E0 /* ProfileViewController.swift */; };
 		681DF3CF1D0733EB00A4AB75 /* SyncableObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681DF3CD1D0733EB00A4AB75 /* SyncableObject+CoreDataProperties.swift */; };
 		681DF3D01D0733EB00A4AB75 /* SyncableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681DF3CE1D0733EB00A4AB75 /* SyncableObject.swift */; };
@@ -32,7 +33,6 @@
 		68AA93231CF68A020006A751 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AA93221CF68A020006A751 /* PostDetailTableViewController.swift */; };
 		68AA93251CF68A1A0006A751 /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AA93241CF68A1A0006A751 /* AddPostTableViewController.swift */; };
 		68AA932B1CF68ECD0006A751 /* PhotoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AA932A1CF68ECD0006A751 /* PhotoSelectViewController.swift */; };
-		68B4B04C1D05BD7A00EE2D88 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B4B04B1D05BD7A00EE2D88 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3108CAC81D550BAB00EDB2CC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		311909E51D529A8000D291E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		68199A871D007F96001C6FAE /* Timeline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Timeline.entitlements; sourceTree = "<group>"; };
+		31928A3C1D53C4BA00668B1E /* Galleree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Galleree.entitlements; path = ../Galleree.entitlements; sourceTree = "<group>"; };
 		681DF3CD1D0733EB00A4AB75 /* SyncableObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SyncableObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		681DF3CE1D0733EB00A4AB75 /* SyncableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncableObject.swift; sourceTree = "<group>"; };
 		682FA4D31CF5427500B81932 /* Galleree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Galleree.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +86,6 @@
 		68AA93221CF68A020006A751 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
 		68AA93241CF68A1A0006A751 /* AddPostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 		68AA932A1CF68ECD0006A751 /* PhotoSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectViewController.swift; sourceTree = "<group>"; };
-		68B4B04B1D05BD7A00EE2D88 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B4B04C1D05BD7A00EE2D88 /* CloudKit.framework in Frameworks */,
+				3108CAC91D550BAB00EDB2CC /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +216,7 @@
 		9D6CD0231CFC8F470002C64B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68B4B04B1D05BD7A00EE2D88 /* CloudKit.framework */,
+				3108CAC81D550BAB00EDB2CC /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 			children = (
 				9D6CD0251CFC8F6E0002C64B /* Storyboards */,
 				68658B571CF8A9E30016C5CD /* Model.xcdatamodeld */,
-				68199A871D007F96001C6FAE /* Timeline.entitlements */,
+				31928A3C1D53C4BA00668B1E /* Galleree.entitlements */,
 				682FA4DD1CF5427500B81932 /* Assets.xcassets */,
 				682FA4E21CF5427500B81932 /* Info.plist */,
 			);
@@ -331,12 +331,15 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = DevMountain;
+				ORGANIZATIONNAME = Dianatalie;
 				TargetAttributes = {
 					682FA4D21CF5427500B81932 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = QF7DSRY6RV;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -515,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -555,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,12 +570,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Timeline/Timeline.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Galleree.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Timeline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twinklytwin.Galleree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinklytwin.GallereeHome;
 				PRODUCT_NAME = Galleree;
 				PROVISIONING_PROFILE = "";
 			};
@@ -582,12 +585,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Timeline/Timeline.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Galleree.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Timeline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twinklytwin.Galleree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twinklytwin.GallereeHome;
 				PRODUCT_NAME = Galleree;
 				PROVISIONING_PROFILE = "";
 			};
