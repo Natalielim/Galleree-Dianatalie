@@ -15,7 +15,6 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
     
     var fetchedResultsController: NSFetchedResultsController?
     
-    @IBOutlet weak var followPostButton: UIBarButtonItem!
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -38,9 +37,6 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
         
         PostController.sharedController.checkSubscriptionToPostComments(post) { (subscribed) in
             
-            dispatch_async(dispatch_get_main_queue(), {
-                self.followPostButton.title = subscribed ? "Unfollow Post" : "Follow Post"
-            })
         }
     }
     

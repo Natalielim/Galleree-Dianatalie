@@ -10,12 +10,13 @@ import UIKit
 
 class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-
-    @IBOutlet weak var imageView: UIImageView!
+//commenting out all code for picking out profile image --> there is a static image view , same for all users
+    
+   /* @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        */
       /*  imageView.layer.borderWidth = 10
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = UIColor.whiteColor().CGColor
@@ -23,11 +24,10 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         imageView.clipsToBounds = true*/
     }
     
-    let imagePicker = UIImagePickerController()
+  /*  let imagePicker = UIImagePickerController()
     
     // MARK: - Capture Image
     
-//    @IBAction func butLibraryAction(sender: AnyObject) {
     @IBAction func butLibraryAction(sender: AnyObject) {
         
         imagePicker.allowsEditing = false
@@ -38,12 +38,13 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
- /*   @IBAction func butPhotoAction(sender: AnyObject) {
+    @IBAction func butPhotoAction(sender: AnyObject) {
+    
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .Camera
         
         presentViewController(imagePicker, animated: true, completion: nil)
-    }*/
+    }
     
     // Mark: - Update Image View
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -52,9 +53,9 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
             imageView.image = pickedImage
         }
         dismissViewControllerAnimated(true, completion: nil)
-    }
+    }*/
 
-    @IBOutlet weak var nameTextField: UITextField!
-}
+ /*   @IBOutlet weak var nameTextField: UITextField!
+}*/
 
    
