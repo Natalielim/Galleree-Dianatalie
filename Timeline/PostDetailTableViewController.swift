@@ -20,8 +20,8 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 40
+       tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 30
         
         if let post = post {
             
@@ -136,7 +136,7 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
     
     // MARK: - Post Actions
     
-    @IBAction func commentButtonTapped(sender: AnyObject) {
+   /* @IBAction func commentButtonTapped(sender: AnyObject) {
         
         presentCommentAlert()
     }
@@ -153,9 +153,9 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
             
             self.updateWithPost(post)
         }
-    }
+    }*/
     
-    func presentCommentAlert() {
+   /* func presentCommentAlert() {
         
         let alertController = UIAlertController(title: "Add Comment", message: nil, preferredStyle: .Alert)
         
@@ -189,5 +189,5 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
         
         presentViewController(activityViewController, animated: true, completion: nil)
     }
-    
+    */
 }
