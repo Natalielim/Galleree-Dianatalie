@@ -142,17 +142,24 @@
                             <rect key="frame" x="0.0" y="519" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="44" id="CXO-aH-jt9"/>
+                                <constraint firstAttribute="height" constant="100" id="CXO-aH-jt9"/>
                             </constraints>
                             <items>
                                 <barButtonItem style="plain" systemItem="flexibleSpace" id="SQE-ni-GBE"/>
                                 <barButtonItem title="Share" id="D8v-Oz-X9v">
-                                    <color key="tintColor" red="0.3921568627" green="0.054901960780000002" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
                                         <action selector="shareButtonTapped:" destination="e8t-4a-dJD" id="EM9-1K-e0c"/>
                                     </connections>
                                 </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="pcy-pH-qac"/>
                             </items>
+                            <color key="barTintColor" red="0.3921568627" green="0.054901960780000002" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="CXO-aH-jt9"/>
+                                </mask>
+                            </variation>
                         </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" textLabel="bBG-jm-rm1" detailTextLabel="oLh-DI-Tt8" rowHeight="57" style="IBUITableViewCellStyleSubtitle" id="2j4-hr-kfV">
@@ -322,9 +329,31 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="299.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-ex-oTe">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-ex-oTe">
+                                            <rect key="frame" x="55" y="0.0" width="545" height="300"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-rA-Bcz">
+                                            <rect key="frame" x="23" y="0.0" width="5" height="300"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="5" id="ebV-w4-N1u"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-H3-ljA">
+                                            <rect key="frame" x="31" y="146" width="16" height="7"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="5" id="rpp-LS-O7D"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="UG0-ex-oTe" firstAttribute="leading" secondItem="aPP-4Z-hw7" secondAttribute="leading" id="GzK-0s-pJ2"/>
