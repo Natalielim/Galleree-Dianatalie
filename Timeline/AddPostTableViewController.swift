@@ -12,7 +12,7 @@ class AddPostTableViewController: UITableViewController {
 
     var image: UIImage?
     
-    @IBOutlet weak var captionTextField: UITextField!
+    @IBOutlet weak var captionTextField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
